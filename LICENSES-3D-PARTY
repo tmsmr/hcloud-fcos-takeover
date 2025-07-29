@@ -1,5 +1,5 @@
-hcloud_fcos_takeover uses third-party libraries or other resources that may
-be distributed under licenses different than the hcloud_fcos_takeover software.
+hcloud-fcos-takeover uses third-party libraries or other resources that may
+be distributed under licenses different than the hcloud-fcos-takeover software.
 
 1) License for https://github.com/poseidon/terraform-provider-ct
 ---
