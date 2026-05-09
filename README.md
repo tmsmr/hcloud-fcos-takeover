@@ -3,6 +3,8 @@
 
 There won't be much documentation here. If you are interested and need help to understand something in this module, feel free to reach out to me 😀.
 
+You might want to take a look at https://github.com/tmsmr/hcloud-kiss-k8s as an example.
+
 ## Quick start
 - Have a [Butane config](https://coreos.github.io/butane/) available
 ```bash
