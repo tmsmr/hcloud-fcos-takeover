@@ -1,12 +1,12 @@
 # hcloud-fcos-takeover
 *Terraform module that outputs user_data for a Hetzner Cloud VPS to install Fedora CoreOS with a given Butane config*
 
-There won't be much documentation here. Currently, this is only a PoC. If you are interested and need help to understand something in this module, feel free to reach out to me 😀.
+There won't be much documentation here. If you are interested and need help to understand something in this module, feel free to reach out to me 😀.
 
 ## Quick start
 - Have a [Butane config](https://coreos.github.io/butane/) available
 ```bash
-$ cat config.butane 
+$ cat config.bu 
 variant: fcos
 version: 1.5.0
 passwd:
@@ -25,8 +25,8 @@ module "hcloud_fcos_takeover" {
 
 resource "hcloud_server" "fcos_server" {
   name        = "fcos"
-  image       = "fedora-42"
-  server_type = "cx22" # at least 4 GB memory
+  image       = "fedora-43"
+  server_type = "cx23"
 
   user_data = module.hcloud_fcos_takeover.user_data
 }
