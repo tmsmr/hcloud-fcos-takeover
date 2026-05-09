@@ -20,7 +20,7 @@ passwd:
 module "hcloud_fcos_takeover" {
   source = "git::https://github.com/tmsmr/hcloud-fcos-takeover.git?ref=v0.4.0"
 
-  butane_config            = file("config.butane")
+  butane_config = file("config.butane")
 }
 
 resource "hcloud_server" "fcos_server" {
