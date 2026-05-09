@@ -18,7 +18,7 @@ passwd:
 - Use the module and supply the `user_data` to a `hcloud_server`
 ```hcl
 module "hcloud_fcos_takeover" {
-  source = "git::https://github.com/tmsmr/hcloud-fcos-takeover.git?ref=v0.3.0"
+  source = "git::https://github.com/tmsmr/hcloud-fcos-takeover.git?ref=v0.4.0"
 
   butane_config            = file("config.butane")
 }
